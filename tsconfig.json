@@ -11,11 +11,10 @@
         "baseUrl": ".",
         "paths": {
             "@/components/*": ["components/*"],
-            "@/containers/*": ["containers/*"],
-            "@/reducers/*": ["reducers/*"],
             "@/utils/*": ["utils/*"],
             "@/api/*": ["api/*"],
-            "@/models/*": ["models/*"],
+            "@/hooks/*": ["hooks/*"],
+            "@/modules/*": ["modules/*"],
             "@/types/*": ["types/*"],
             "@/database/*": ["database/*"],
             "@/media/*": ["media/*"],
