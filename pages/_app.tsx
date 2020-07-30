@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStore, compose, applyMiddleware } from 'redux';
 import withRedux from 'next-redux-wrapper';
+import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import rootReducer, { RootState } from '@/modules/index';
@@ -10,7 +11,7 @@ const App = ({ Component }) => {
 };
 
 const configureStore = (initialState: RootState, options: any) => {
-    const middlewares = [];
+    const middlewares = [thunk];
     const enhancer =
         process.env.NODE_ENV === 'production'
             ? compose(applyMiddleware(...middlewares))
