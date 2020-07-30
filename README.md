@@ -8,9 +8,12 @@ Modern Tech Full Stack Framework
 -   React
 -   Node.js
 
+> React
+
+-   Hooks
+
 > Redux
 
--   ducks pattern
 -   redux-thunk
 
 > UI
@@ -21,4 +24,4 @@ Modern Tech Full Stack Framework
 -   normalize.css
 -   reset.css
 
-##### The last update is 2020-07-12.
+##### The last update is 2020-07-30.
