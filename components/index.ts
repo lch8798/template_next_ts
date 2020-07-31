@@ -1,3 +1,4 @@
+import Layout from '@/components/Layout';
 import Nav from '@/components/Nav';
 
-export { Nav };
+export { Layout, Nav };

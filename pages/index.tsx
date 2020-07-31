@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { Layout } from '@/components/index';
 
 // hooks
 import useCounter from '@/hooks/useCounter';
@@ -25,7 +26,7 @@ export default function App(): JSX.Element {
     }
 
     return (
-        <p>
+        <Layout>
             <div>
                 <h1>Example</h1>
             </div>
@@ -56,6 +57,6 @@ export default function App(): JSX.Element {
                     <a>/dynamic/chan/hello world</a>
                 </Link>
             </div>
-        </p>
+        </Layout>
     );
 }

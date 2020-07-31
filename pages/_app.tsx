@@ -6,16 +6,8 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import rootReducer, { RootState } from '@/modules/index';
 
-import { Nav } from '@/components/index';
-
-// Templete
 const App = ({ Component }) => {
-    return (
-        <div>
-            <Nav />
-            <Component />
-        </div>
-    );
+    return <Component />;
 };
 
 // Make Redux Store
