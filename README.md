@@ -1,6 +1,6 @@
-# Framework
+# Configuration
 
-Modern Tech Full Stack Framework
+Modern Tech Full Stack Template
 
 > Next.js
 
@@ -24,4 +24,4 @@ Modern Tech Full Stack Framework
 -   normalize.css
 -   reset.css
 
-##### The last update is 2020-07-30.
+##### The last update is 2020-07-31.
