@@ -8,6 +8,10 @@ import rootReducer, { RootState } from '@/modules/index';
 
 import { Nav } from '@/components/index';
 
+// chose reset style sheet
+// import '@/utils/reset.min.css';
+import '@/utils/normalize.min.css';
+
 // Templete
 const App = ({ Component }) => {
     return (
