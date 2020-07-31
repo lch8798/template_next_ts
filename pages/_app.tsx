@@ -6,10 +6,19 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import rootReducer, { RootState } from '@/modules/index';
 
+import { Nav } from '@/components/index';
+
+// Templete
 const App = ({ Component }) => {
-    return <Component />;
+    return (
+        <div>
+            <Nav />
+            <Component />
+        </div>
+    );
 };
 
+// Make Redux Store
 const configureStore = (initialState: RootState, options: any) => {
     const middlewares = [thunk];
     const enhancer =

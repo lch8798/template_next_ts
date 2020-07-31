@@ -5,6 +5,7 @@ import Link from 'next/link';
 import useCounter from '@/hooks/useCounter';
 
 // utils
+import { Hello } from '@/types/index';
 import { hello } from '@/api/index';
 import { time } from '@/utils/index';
 
@@ -19,7 +20,7 @@ export default function App(): JSX.Element {
         // temp delay
         await time.sleep(1000);
 
-        const result: hello.Hello = await hello.getHello();
+        const result: Hello = await hello.getHello();
         setFetchedData(result.data);
     }
 

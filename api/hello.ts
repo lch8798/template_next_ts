@@ -1,8 +1,5 @@
 import { api } from '@/utils/index';
-
-export type Hello = {
-    data: string;
-};
+import { Hello } from '@/types/index';
 
 /**
  * 테스트용 Hello World
