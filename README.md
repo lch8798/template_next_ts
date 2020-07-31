@@ -1,6 +1,6 @@
 # Configuration
 
-Modern Tech Full Stack Templete
+Modern Tech Full Stack Template
 
 > Next.js
 
