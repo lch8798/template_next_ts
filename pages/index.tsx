@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Layout } from '@/components/index';
+import { Button } from 'antd';
 
 // hooks
 import useCounter from '@/hooks/useCounter';
@@ -35,8 +36,12 @@ export default function App(): JSX.Element {
             <div>
                 <h3>Counter</h3>
                 <p>{counter.state.number}</p>
-                <button onClick={counter.increment}>+</button>
-                <button onClick={counter.decrement}>-</button>
+                <Button type="primary" onClick={counter.increment}>
+                    +
+                </Button>
+                <Button type="primary" onClick={counter.decrement}>
+                    -
+                </Button>
             </div>
 
             {/* Fetch - Render By Component State */}
@@ -44,7 +49,9 @@ export default function App(): JSX.Element {
                 <h3>Fetch</h3>
                 {fetchedData === null && <p>데이터 없음.</p>}
                 {fetchedData !== null && <p>{fetchedData}</p>}
-                <button onClick={testFetch}>Test Fetch</button>
+                <Button type="primary" onClick={testFetch}>
+                    Test Fetch
+                </Button>
             </div>
 
             {/* Dynamic Routes - Next.js Built-In Router */}

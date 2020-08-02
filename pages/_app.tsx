@@ -6,6 +6,9 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import rootReducer, { RootState } from '@/modules/index';
 
+// Ant Design init
+import 'antd/dist/antd.css';
+
 const App = ({ Component }) => {
     return <Component />;
 };
