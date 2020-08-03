@@ -1,7 +1,7 @@
-import { hello } from '@/api/index';
+import { Hello } from '@/types/index';
 
 export default function (req, res) {
-    const resData: hello.Hello = {
+    const resData: Hello = {
         data: 'hello world!',
     };
 
