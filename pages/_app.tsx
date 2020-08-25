@@ -14,7 +14,7 @@ const App = ({ Component }) => {
 };
 
 // Make Redux Store
-const configureStore = (initialState: RootState, options: any) => {
+const configureStore = (initialState) => {
     const middlewares = [thunk];
     const enhancer =
         process.env.NODE_ENV === 'production'
