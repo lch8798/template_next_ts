@@ -11,9 +11,7 @@ Modern Tech Full Stack Template
 > React
 
 -   Hooks
-
-> Redux
-
+-   redux
 -   redux-thunk
 
 > UI
