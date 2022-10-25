@@ -1,31 +1,30 @@
 {
-    "compilerOptions": {
-        "target": "es6",
-        "lib": ["dom", "dom.iterable", "esnext"],
-        "allowJs": true,
-        "skipLibCheck": true,
-        "strict": false,
-        "forceConsistentCasingInFileNames": true,
-        "noEmit": true,
-        "esModuleInterop": true,
-        "baseUrl": ".",
-        "paths": {
-            "@/components/*": ["components/*"],
-            "@/utils/*": ["utils/*"],
-            "@/api/*": ["api/*"],
-            "@/hooks/*": ["hooks/*"],
-            "@/modules/*": ["modules/*"],
-            "@/types/*": ["types/*"],
-            "@/database/*": ["database/*"],
-            "@/media/*": ["media/*"],
-            "@/config": ["config.json"]
-        },
-        "module": "esnext",
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
-        "isolatedModules": true,
-        "jsx": "preserve"
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"],
+      "@api/*": ["api/*"],
+      "@hooks/*": ["hooks/*"],
+      "@modules/*": ["modules/*"],
+      "@types/*": ["types/*"],
+      "@configs/*": ["configs/*"]
     },
-    "exclude": ["node_modules"],
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

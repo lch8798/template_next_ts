@@ -1,13 +1,13 @@
-import React from 'react';
-import { useRouter } from 'next/router';
+import React from "react";
+import { useRouter } from "next/router";
 
 export default function Dynamic(): JSX.Element {
-    const { id, comment } = useRouter().query;
+  const { id, comment } = useRouter().query;
 
-    return (
-        <p>
-            <p>id: {id}</p>
-            <p>comment: {comment}</p>
-        </p>
-    );
+  return (
+    <div>
+      <p>id: {id}</p>
+      <p>comment: {comment}</p>
+    </div>
+  );
 }

@@ -1,3 +1,3 @@
-import * as hello from '@/api/hello';
+import * as hello from "@api/hello";
 
 export { hello };

@@ -3,13 +3,13 @@
  * @param middleware 미들웨어 함수
  */
 export function initMiddleware(middleware: Function): Function {
-    return (req, res): Promise<PromiseConstructor> =>
-        new Promise((resolve, reject) => {
-            middleware(req, res, (result) => {
-                if (result instanceof Error) {
-                    return reject(result);
-                }
-                return resolve(result);
-            });
-        });
+  return (req, res): Promise<PromiseConstructor> =>
+    new Promise((resolve, reject) => {
+      middleware(req, res, (result) => {
+        if (result instanceof Error) {
+          return reject(result);
+        }
+        return resolve(result);
+      });
+    });
 }
